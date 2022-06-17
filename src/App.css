@@ -40,3 +40,26 @@ button{
     transform: rotate(360deg);
   }
 }
+.active{
+  color: #61dafb;
+}
+.inactive{
+  color: rgb(252, 252, 252);
+}
+.square{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+
+}
+.square-on{
+  background-color: #ffffff;
+  color: #000000;
+}
+.square-off{
+  background-color: #000000;
+  color: #ffffff;
+}
+
