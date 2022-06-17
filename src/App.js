@@ -37,7 +37,12 @@ function App() {
           Counter: {count}, {counType}
         </p>
         <button onClick={() => handleClick(true)}>Increase</button>
-        <div className={`square ${isOn ? "square-on" : "square-off"} `}>
+        <div
+          // ejercicio con mouseOver
+          onMouseOver={() => setIsOn(true)}
+          onMouseOut={() => setIsOn(false)}
+          className={`square ${isOn ? "square-on" : "square-off"} `}
+        >
           {isOn ? "ON" : "OFF"}
         </div>
         <button onClick={() => setIsOn(true)}>On</button>
