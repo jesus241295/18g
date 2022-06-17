@@ -7,46 +7,45 @@ import FullName from "./components/FullName";
 
 function App() {
   // estado local del componente
-  const [count, setCount] = useState(0);
-  const [isOn, setIsOn] = useState(false);
-  // useEffect(() => {
-  //   console.log("USE_EFFECT");
-  // }, []);
-  // useEffect(() => {
-  //   console.log("ESE_EFFECT");
-  // });
+  const [itemActive, setIsActive] = useState(null);
 
-  const handleClick = (increase) => {
-    let newCount = count;
-    if (increase) {
-      newCount = newCount + 1;
-    } else {
-      newCount = newCount - 1;
-    }
-    setCount(newCount);
-  };
-  const isMultiple = count % 5 === 0 && count !== 0 ? true : false;
-  const counType = isMultiple ? "Es multiplo" : "no es multiple";
-  const countClass = isMultiple ? "active" : "inactive";
+  const isActive = (itemNumber) => itemNumber === itemActive;
+
   return (
     <div className="App">
       <header className="App-header">
-        <Title text="chucho"></Title>
-        <FullName fisrtName="Jesus" lastName="Gonzalez"></FullName>
-        <p className={countClass}>
-          Counter: {count}, {counType}
-        </p>
-        <button onClick={() => handleClick(true)}>Increase</button>
-        <div
-          // ejercicio con mouseOver
-          onMouseOver={() => setIsOn(true)}
-          onMouseOut={() => setIsOn(false)}
-          className={`square ${isOn ? "square-on" : "square-off"} `}
-        >
-          {isOn ? "ON" : "OFF"}
-        </div>
-        <button onClick={() => setIsOn(true)}>On</button>
-        <button onClick={() => setIsOn(false)}>OFF</button>
+        <ul>
+          <li
+            onClick={() => setIsActive(1)}
+            className={`${isActive(1) ? "active" : "inactive"}`}
+          >
+            Parrafo 1
+          </li>
+          <li
+            onClick={() => setIsActive(2)}
+            className={`${isActive(2) ? "active" : "inactive"}`}
+          >
+            Parrafo 2
+          </li>
+          <li
+            onClick={() => setIsActive(3)}
+            className={`${isActive(3) ? "active" : "inactive"}`}
+          >
+            Parrafo 3
+          </li>
+          <li
+            onClick={() => setIsActive(4)}
+            className={`${isActive(4) ? "active" : "inactive"}`}
+          >
+            Parrafo 4
+          </li>
+          <li
+            onClick={() => setIsActive(5)}
+            className={`${isActive(5) ? "active" : "inactive"}`}
+          >
+            Parrafo 5
+          </li>
+        </ul>
       </header>
     </div>
   );

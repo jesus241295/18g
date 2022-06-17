@@ -44,7 +44,7 @@ button{
   color: #61dafb;
 }
 .inactive{
-  color: black;
+  color: rgb(252, 252, 252);
 }
 .square{
   display: flex;
@@ -62,3 +62,4 @@ button{
   background-color: #000000;
   color: #ffffff;
 }
+
