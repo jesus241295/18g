@@ -83,12 +83,73 @@ button:hover {
   display: flex;
   justify-content: center;
 }
-
 .container {
   width: 70%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+.target{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 15px;
+}
+.date{
+  display: flex;
+  
+}
+.input{
+  margin-bottom: 10px;
+  height: 40px;
+  border-radius: 5px;
+}
 
-
+.card-target, .card-target1{
+  width: 400px;
+  height: 280px;
+  background-color: #013dad;
+  border-radius: 20px;
+  margin: 50px;
+}
+.img{
+  width: 60px;
+  height:40px;
+  border-radius: 10px;
+  position: relative;
+  top: 30px;
+  right: 170px;
+}
+.visa{
+  width: 90px;
+  height: 50px;
+  border-radius: 5px;
+  position: relative;
+  left: 140px;
+  top: 30px;
+}
+.fijo{
+  display: flex;  
+}
+.tarjeta, .tarjeta-2{
+  color: #ffffff;
+  font-size: 25px;
+  height: 50px;
+  position: relative;
+  left: 30px;
+  top: 40px;
+}
+.tarjeta-2{
+  font-size: 1rem;
+  width: 200px;
+  left: 30px;
+  top: 30px;
+}
+.tarjeta-3{
+  color: #ffffff;
+  height:50px;
+  width: 100px;
+  position: relative;
+  left: 65%;
+  bottom: 38px;
+}
