@@ -1,0 +1,59 @@
+.container{
+    display: flex;
+    justify-content: center;
+    width: 900px;
+    height: auto;
+    text-align: center;
+    margin: 40px;
+}
+.formulario{
+    border: 5px solid #00ffff;
+    border-radius:20px;
+    padding: 15px;
+    width: 345px;
+    background-image: url("https://swcrafters.fra1.cdn.digitaloceanspaces.com/Categories/ReactJS_category.png");
+    background-position: center;}
+.kod{
+    display: flex;
+    justify-content: center;
+}
+.img{
+    width: 120px;
+    height: 110px;
+    margin-bottom: 27px;
+    opacity: 95%;
+}
+input{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 30px;
+    width: 70%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #e7e7e7;
+    border: 3px solid #00ffff8c;
+}
+.boton{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 10px;
+    height: 35px;
+    background-color: black;
+    border-radius: 5px;
+    border: 2px solid aqua;
+    color: white;
+    transition: 1s;
+    width: 60%;
+    cursor: pointer;
+    
+}
+.boton:hover{
+    background-color: #04ebeb;
+    color: black;
+    border: 2px solid white;
+}
+.content-logo{
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    width: 50px;
+}

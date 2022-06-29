@@ -8,6 +8,7 @@ import ProfileContainer from "./containers/ProfileContainer";
 // Components
 import About from "./pages/About";
 import Home from "./pages/Home";
+import ProfileCreate from "./pages/Profile/Create";
 import ProfileDetail from "./pages/Profile/Detail";
 import ProfileEdit from "./pages/Profile/Edit";
 
@@ -24,6 +25,7 @@ function App() {
           <Route path="profile" element={<ProfileContainer />}>
             <Route index element={<ProfileDetail />} />
             <Route path="edit" element={<ProfileEdit />} />
+            <Route path="create" element={<ProfileCreate />} />
           </Route>
         </Route>
       </Routes>
